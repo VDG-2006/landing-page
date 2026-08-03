@@ -7,7 +7,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font: var(--font-type);
+    font-family: var(--font-type);
 }
 
 :root{
@@ -19,6 +19,7 @@
     --logo-font-size:24px; 
     --hero-text-size: 48px;
     --heading-size: 36px;
+    --subtext-size:18px;
 
     --heading-text-weight: 900;
     --quote-weight:300;
@@ -47,34 +48,50 @@
     justify-content: flex-end;
     list-style-type: none;
     font-weight: var(--quote-weight);
-    font-size: 18px;
+    font-size: var(--subtext-size);
     gap: 15px;
     padding: 10px;
     margin: 5px;
 }
 
+.navbar .navlinks ul li{
+
+    color: var(--subtext-color);
+    text-decoration: none;
+}
+
 .hero{
     display: flex;
-    justify-content: space-evenly;
-    gap: 12px;
+    justify-content: space-around;
+    gap: 32px;
     background-color: var(--dark-background);
     color: var(--heading-text-color);
     align-items: center;
+    padding: 32px 48px;
 }
 
-.hero .left{
-    margin: 5px;
-    padding: 10px;
-    flex:1;
-    align-self: center;
-}
-
-.hero .right{
-    margin: 5px;
-    padding: 10px;
+.hero .left,.hero .right{
     flex:1;
 }
 
 .hero .left .hero-primary{
     font-size: var(--hero-text-size);
+    font-weight: var(--hero-text-weight);
+    margin-bottom: 8px;
+}
+
+.hero .left .hero-secondary{
+    font-size: var(--subtext-size);
+}
+
+.hero .left .button button{
+    padding: 10px 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--call-to-action-color);
+    color: var(--heading-text-color);
+    font-weight: var(--heading-text-weight);
+    cursor: pointer;
+    font-size: 16px;
 }
