@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(Fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+:root{
+    --dark-background: #1f2937;
+    --call-to-action-color: #3882F6;
+    --heading-text-color: #F9FAF8;
+    --subtext-color: #E5E7EB; 
+
+    --logo-font-size:24px; 
+    --hero-text-size: 48px;
+    --heading-size: 36px;
+
+    --heading-text-weight: 900;
+    --quote-weight:300;
+
+    --font-style: italic;
+    --font-type: 'Roboto';
+}
