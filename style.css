@@ -26,3 +26,30 @@
     --font-style: italic;
     --font-type: 'Roboto', sans-serif;
 }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-background);
+    color: var(--heading-text-color);
+    font-size: var(--logo-font-size);
+    align-items: center;
+}
+.navbar .logo{
+    padding: 10px;
+    margin: 5px;
+    font-weight: var(--heading-text-weight);
+}
+
+.navbar .navlinks ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: var(--quote-weight);
+    font-size: 18px;
+    gap: 15px;
+    padding: 10px;
+    margin: 5px;
+}
