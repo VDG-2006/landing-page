@@ -45,11 +45,36 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    text-decoration: none;
     list-style-type: none;
     font-weight: var(--quote-weight);
     font-size: 18px;
     gap: 15px;
     padding: 10px;
     margin: 5px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+    background-color: var(--dark-background);
+    color: var(--heading-text-color);
+    align-items: center;
+}
+
+.hero .left{
+    margin: 5px;
+    padding: 10px;
+    flex:1;
+    align-self: center;
+}
+
+.hero .right{
+    margin: 5px;
+    padding: 10px;
+    flex:1;
+}
+
+.hero .left .hero-primary{
+    font-size: var(--hero-text-size);
 }
