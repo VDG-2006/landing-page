@@ -17,7 +17,7 @@
     --subtext-color: #E5E7EB; 
 
     --logo-font-size:24px; 
-    --hero-text-size: 48px;
+    --hero-text-size: 40px;
     --heading-size: 36px;
     --subtext-size:18px;
 
@@ -70,8 +70,13 @@
     padding: 32px 48px;
 }
 
-.hero .left,.hero .right{
-    flex:1;
+.hero .left{
+    flex: 1;
+}
+
+.hero .right{
+    flex:0 0 700px;
+    max-width: 100%;
 }
 
 .hero .left .hero-primary{
@@ -94,4 +99,10 @@
     font-weight: var(--heading-text-weight);
     cursor: pointer;
     font-size: 16px;
+}
+
+.hero .right img{
+    width: 100%;
+    height: auto;
+    object-fit: conver;
 }
