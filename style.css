@@ -16,16 +16,22 @@
     --heading-text-color: #F9FAF8;
     --subtext-color: #E5E7EB; 
 
-    --logo-font-size:24px; 
-    --hero-text-size: 40px;
-    --heading-size: 36px;
-    --subtext-size:18px;
+    --logo-font-size:20px; 
+    --hero-text-size: 38px;
+    --heading-size: 26px;
+    --subtext-size:14px;
 
     --heading-text-weight: 900;
     --quote-weight:300;
 
     --font-style: italic;
     --font-type: 'Roboto', sans-serif;
+}
+
+.navbar,.hero{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .navbar{
@@ -91,7 +97,7 @@
 
 .hero .left .button button{
     padding: 10px 24px;
-    margin: 5px;
+    margin: 15px 5px;
     border: none;
     border-radius: 8px;
     background-color: var(--call-to-action-color);
@@ -99,6 +105,7 @@
     font-weight: var(--heading-text-weight);
     cursor: pointer;
     font-size: 16px;
+    width: 140px;
 }
 
 .hero .right img{
