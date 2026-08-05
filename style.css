@@ -17,9 +17,9 @@
     --subtext-color: #E5E7EB; 
 
     --logo-font-size:20px; 
-    --hero-text-size: 38px;
-    --heading-size: 26px;
-    --subtext-size:14px;
+    --hero-text-size: 32px;
+    --heading-size: 24px;
+    --subtext-size:18px;
 
     --heading-text-weight: 900;
     --quote-weight:300;
@@ -28,9 +28,13 @@
     --font-type: 'Roboto', sans-serif;
 }
 
+header,.backdrop{
+    background-color: var(--dark-background);
+}
+
 .navbar,.hero{
     width: 100%;
-    max-width: 1280px;
+    max-width: 1380px;
     margin: 0 auto;
 }
 
@@ -73,11 +77,12 @@
     background-color: var(--dark-background);
     color: var(--heading-text-color);
     align-items: center;
-    padding: 32px 48px;
+    padding: 128px 64px;
 }
 
 .hero .left{
     flex: 1;
+    align-items: center;
 }
 
 .hero .right{
